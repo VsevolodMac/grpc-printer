@@ -1,0 +1,13 @@
+# Бинарные файлы
+*.exe
+*.out
+*.a
+
+# Кэш Go
+*.test
+*.mod
+*.sum
+
+# IDE-файлы
+.idea/
+.vscode/

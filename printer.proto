@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package printer;
+
+option go_package = "github.com/vsevolod/grpc-printer;printer";
+
+service PrinterService {
+  rpc PrintMessage(PrintRequest) returns (PrintResponse);
+}
+
+message PrintRequest {
+  string text = 1;
+}
+
+message PrintResponse {
+  string status = 1;
+}
